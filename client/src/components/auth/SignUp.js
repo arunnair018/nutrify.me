@@ -33,7 +33,6 @@ class SignUp extends Component {
     axios
       .post(`api/v1/users`, data)
       .then((res) => {
-        console.log(res);
         cookie.set("token", res.data.token);
         cookie.set("user_id", res.data.id);
         cookie.set("max_calorie", res.data.calorie);
@@ -43,7 +42,6 @@ class SignUp extends Component {
       .catch((err) => {
         // API call not succeed set error to display
         this.setState({ errors: err.response.data });
-        console.log(this.state);
       });
   };
 

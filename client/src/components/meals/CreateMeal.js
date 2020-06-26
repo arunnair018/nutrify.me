@@ -71,13 +71,13 @@ class CreateMeal extends Component {
     // API call to fetch calorie
     axios({
       method: "post",
-      url: `${process.env.REACT_APP_NUTRITION_API}`,
+      url: "https://trackapi.nutritionix.com/v2/natural/nutrients",
       data: {
         query: this.state.name,
       },
       headers: {
-        "x-app-id": `${process.env.REACT_APP_NUTRITION_ID}`,
-        "x-app-key": `${process.env.REACT_APP_NUTRITION_KEY}`,
+        "x-app-id": "f4f12d11",
+        "x-app-key": "a02193a3c27dd924c3b9c438f39db957",
       },
     })
       .then((res) => {
