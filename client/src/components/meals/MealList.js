@@ -61,12 +61,9 @@ class MealList extends Component {
             {data &&
               data.map((meal) => {
                 return (
-                  <MealSummary
-                    meal={meal}
-                    key={meal._id}
-                    sum={sum}
-                    getdata={this.getdata}
-                  />
+                  <div key={meal._id}>
+                    <MealSummary meal={meal} sum={sum} getdata={this.getdata} />
+                  </div>
                 );
               })}
           </div>

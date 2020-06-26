@@ -49,7 +49,7 @@ class MealSummary extends Component {
 
     return (
       <div>
-        <div className='modal' id='myModal'>
+        <div className='modal' id={`myModal${meal._id}`}>
           <div className='modal-dialog modal-xl'>
             <div className='modal-content'>
               <div className='modal-header'>
@@ -87,7 +87,7 @@ class MealSummary extends Component {
               type='button'
               className='btn btn-link'
               data-toggle='modal'
-              data-target='#myModal'
+              data-target={`#myModal${meal._id}`}
               style={{ paddingLeft: "20%", paddingRight: "20%" }}
             >
               <svg
