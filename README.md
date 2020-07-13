@@ -30,12 +30,16 @@ A WebApp to track your daily calorie limit.
       })
       .catch((err) => {
         console.log(err);
-      });``  
+      });
+      ```  
     Sample Output :   
     * CODE: 200
-      Content: ``{
+      Content: 
+      ```
+      {
       "id": String,
       "token": String,
       "calorie": Number,
       "username": String
-      }```
+      }
+      ```
