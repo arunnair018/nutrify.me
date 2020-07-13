@@ -14,9 +14,9 @@ A WebApp to track your daily calorie limit.
  ## API Endpoints
  ### Authentication API's
  * login
-    URL : ``/users/login``
-    Method : POST
-    Sample Input: 
+    URL : ``/users/login``  
+    Method : POST  
+    Sample Input:   
     ``javascript 
     const data = {
       email: this.state.email,
@@ -30,8 +30,8 @@ A WebApp to track your daily calorie limit.
       })
       .catch((err) => {
         console.log(err);
-      });``
-    Sample Output : 
+      });``  
+    Sample Output :   
     * CODE: 200
       Content: ``{
       "id": String,
