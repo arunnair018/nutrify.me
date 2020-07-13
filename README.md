@@ -13,7 +13,7 @@ A WebApp to track your daily calorie limit.
  
  ## API Endpoints
  ### Authentication API's
- * login
+ * ##### login  
     URL : ``/users/login``  
     Method : POST  
     Sample Input:   
@@ -33,7 +33,7 @@ A WebApp to track your daily calorie limit.
       });
       ```  
     Sample Output :   
-    * CODE: 200
+    * CODE: 200  
       Content: 
       ```
       {
@@ -42,4 +42,38 @@ A WebApp to track your daily calorie limit.
       "calorie": Number,
       "username": String
       }
+      ```
+    * CODE: 401  
+      Content: 
+      ```
+      {"error":"Invalid login credentials"}
+      ```
+ 
+ * ##### logout  
+    URL : ``/users/login``  
+    Method : POST  
+    Sample Input:   
+    ```javascript 
+    axios({
+      method: "post",
+      url: `users/logout`,
+      headers: {
+        Authorization: `Basic ${token}`,
+       },
+      }).then((res) => {
+        console.log(res)
+      }).catch((err) => {
+        console.log(err);
+      });
+      ```  
+    Sample Output :   
+    * CODE: 200  
+      Content: 
+      ```
+      {"message":"successfully logged out"}
+      ```
+    * CODE: 401  
+      Content: 
+      ```
+      {"error":"You are not authorized to access this resource..."}
       ```
