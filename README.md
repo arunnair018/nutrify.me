@@ -17,7 +17,7 @@ A WebApp to track your daily calorie limit.
     URL : ``/users/login``  
     Method : POST  
     Sample Input:   
-    ``javascript 
+    ```javascript 
     const data = {
       email: this.state.email,
       password: this.state.password,
@@ -38,4 +38,4 @@ A WebApp to track your daily calorie limit.
       "token": String,
       "calorie": Number,
       "username": String
-      }``
+      }```
