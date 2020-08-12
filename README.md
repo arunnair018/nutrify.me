@@ -12,4 +12,4 @@ A WebApp to track your daily calorie limit.
  * Run server (in main directory of project) ``npm start``
  
 ## Live Demo
-``https://nutrify018.herokuapp.com/``
+check it out [LIVE!](https://nutrify018.herokuapp.com/)
