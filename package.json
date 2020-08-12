@@ -33,6 +33,7 @@
     "mongoose": "^5.9.10",
     "request": "^2.88.2",
     "validator": "^13.0.0"
+    "lodash": ">=4.17.19"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
